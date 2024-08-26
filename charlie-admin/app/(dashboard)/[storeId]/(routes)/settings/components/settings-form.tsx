@@ -103,7 +103,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
                         render={({ field }) => (
                             <FormItem>
                                 <FormLabel>
-                                    Name
+                                    Nome da Loja
                                 </FormLabel>
                                 <FormControl>
                                     <Input disabled={loading} placeholder="Nome da loja" {...field} />
