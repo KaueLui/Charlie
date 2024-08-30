@@ -22,12 +22,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<form method="post" action="">
-    <label>Nome de Usuário:</label>
-    <input type="text" name="username" required><br>
-    <label>Email:</label>
-    <input type="email" name="email" required><br>
-    <label>Senha:</label>
-    <input type="password" name="password" required><br>
-    <button type="submit">Registrar</button>
-</form>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuário</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form method="post" action="">
+        <label>Nome de Usuário:</label>
+        <input type="text" name="username" required placeholder="@usuario"><br>
+        <label>Email:</label>
+        <input type="email" name="email" required placeholder="seu-email@gmail.com"><br>
+        <label>Senha:</label>
+        <input type="password" name="password" required placeholder="*********"><br>
+        <button type="submit">Registrar</button>
+        <p class="signup-link">
+            Se você já tem uma conta, <a href="/php/login.php">faça login aqui</a>.
+        </p>
+    </form>
+</body>
+</html>

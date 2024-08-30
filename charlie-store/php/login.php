@@ -24,11 +24,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 <form method="post" action="">
     <label>Email:</label>
-    <input type="email" name="email" required><br>
+    <input type="email" name="email" required placeholder="seu-email@gmail.com"><br>
     <label>Senha:</label>
-    <input type="password" name="password" required><br>
+    <input type="password" name="password" required placeholder="*********"><br>
     <button type="submit">Entrar</button>
+    <p class="signup-link">
+            Se você não tem uma conta, <a href="/php/register.php">faça seu registro</a>.
+        </p>
 </form>

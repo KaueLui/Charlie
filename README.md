@@ -45,9 +45,6 @@ Bem-vindo ao **Charlie**, a plataforma de e-commerce que permite que qualquer pe
 4. Crie e configure o arquivo `.env` com suas credenciais:
     ```bash
    Em charlie-admin:
-   ```
-    ```bash
-   Em charlie-admin:
 
    #Informações para conexão do Clerk
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
@@ -73,6 +70,20 @@ Bem-vindo ao **Charlie**, a plataforma de e-commerce que permite que qualquer pe
     #Configurações de perfil
     STORE_NAME_URL=""
     STORE_DESC_URL=""
+   ```
+
+   ```bash
+   Banco de Dados local (php - em desenvolvimento):
+
+   CREATE DATABASE IF NOT EXISTS charlie_user;
+   
+   CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   );
    ```
 
 5. Execute os comandos para formar os dados no banco:
