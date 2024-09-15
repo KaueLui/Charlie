@@ -31,7 +31,7 @@ export const ApiAlert: React.FC<ApiAlertProps> = ({
         navigator.clipboard.writeText(description);
         toast.success("API Route copied to the clipboard.")
     }
-    /*return (
+    return (
         <Alert>
             <Server className="h-4 w-4" />
             <AlertTitle className="flex items-center gap-x-2">
@@ -49,5 +49,5 @@ export const ApiAlert: React.FC<ApiAlertProps> = ({
                 </Button>
             </AlertDescription>
         </Alert>
-    )*/
+    )
 }
